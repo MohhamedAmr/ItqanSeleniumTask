@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="test_runner.AllureTestListener"/>
+    </listeners>
+    <parameter name="browser" value="chrome"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/Mody/IdeaProjects/ItqanSeleniumTask">
+        <classes>
+            <class name="test_runner.RegistrationTest">
+                <methods>
+                    <include name="verifyRegistrationSuccess"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
